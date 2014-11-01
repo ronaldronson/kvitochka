@@ -1,0 +1,9 @@
+{
+    "lib": {
+        "www": {
+            "id": "com.phonegap.kvitochka",
+            "version": "0.0.0",
+            "uri": "https://github.com/ronaldronson/kvitochka"
+        }
+    }
+}
