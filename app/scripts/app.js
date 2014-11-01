@@ -1,5 +1,4 @@
 'use strict';
-alert(location.href);
 angular.module('mobileApp', [
   'ngCookies',
   'ngResource',
