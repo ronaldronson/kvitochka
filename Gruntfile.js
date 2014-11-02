@@ -260,7 +260,9 @@ module.exports = function (grunt) {
             '.htaccess',
             'bower_components/**/*',
             'images/{,*/}*.{gif,webp}',
-            'fonts/*'
+            'fonts/*',
+            'views/*',
+            '*.html'
           ]
         }, {
           expand: true,
@@ -282,10 +284,10 @@ module.exports = function (grunt) {
         cwd: '<%= yeoman.dist %>',
         dest: '<%= yeoman.phonegap %>',
         src: '**'
-      },
+      }
     },
     concurrent: {
-      server: [        
+      server: [
         'coffee:dist',
         'jade:dist',
         'copy:styles'
@@ -298,7 +300,7 @@ module.exports = function (grunt) {
         'coffee',
         'copy:styles',
         'imagemin',
-        'svgmin',
+        //'svgmin',
         'htmlmin'
       ]
     },
